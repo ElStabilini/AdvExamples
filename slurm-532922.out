@@ -1,0 +1,12 @@
+[Qibo 0.2.11|INFO|2024-08-31 13:17:31]: Loading platform dummy
+[Qibo 0.2.11|ERROR|2024-08-31 13:17:31]: Platform .... not found. Check $QIBOLAB_PLATFORMS environment variable.
+Traceback (most recent call last):
+  File "/nfs/users/elisa.stabilini/advexamples/t1_test.py", line 9, in <module>
+    platform = create_platform("....")
+  File "/nfs/tools/qibo/lib/python3.10/site-packages/qibolab/platform/load.py", line 64, in create_platform
+    return _load(_search(name, _platforms_paths()))
+  File "/nfs/tools/qibo/lib/python3.10/site-packages/qibolab/platform/load.py", line 33, in _search
+    raise_error(
+  File "/nfs/tools/qibo/lib/python3.10/site-packages/qibo/config.py", line 46, in raise_error
+    raise exception(message)
+ValueError: Platform .... not found. Check $QIBOLAB_PLATFORMS environment variable.
